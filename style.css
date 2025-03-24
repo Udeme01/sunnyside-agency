@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* css custom variables */
+:root {
+  /* primary */
+  --softRed: hsl(7, 99%, 70%);
+  --yellow: hsl(51, 100%, 49%);
+  --darkDesaturatedCyan-graphic-design-text: hsl(167, 40%, 24%);
+  --darkBlue-photography-text: hsl(198, 62%, 26%);
+  --darkModerateCyan-footer: hsl(168, 34%, 41%);
+
+  /* neutral */
+  --veryDarkDesaturatedBlue: hsl(212, 27%, 19%);
+  --veryDarkGrayishBlue: hsl(213, 9%, 39%);
+  --darkGrayishBlue: hsl(232, 10%, 55%);
+  --grayishBlue: hsl(210, 4%, 67%);
+  --white: hsl(0, 0%, 100%);
+
+  /* font */
+  --fontSize: 18px;
+  --fontFamily-fraunces: "Fraunces", serif;
+  --fontFamily-barlow: "Barlow", sans-serif;
+  --fontWeight-fraunces-bold: 700;
+  --fontWeight-fraunces-black: 900;
+  --fontWeight-barlow-semibold: 600;
+}
+
+body {
+  font-size: var(--fontSize);
+}
+
+#header-showcase {
+  background: url("/images/desktop/image-header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+
+  position: relative;
+}
+
+.container {
+  width: 90%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 2rem;
+}
+
+.creativesText-showcase {
+  font-family: var(--fontFamily-fraunces);
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--white);
+  letter-spacing: 6px;
+  padding-top: 4rem;
+}
+
+.arrow-down-container {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.arrow-down-img {
+    width: 30px;
+}
