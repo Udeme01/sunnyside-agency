@@ -72,5 +72,18 @@ body {
 }
 
 .arrow-down-img {
-    width: 30px;
+  width: 30px;
+}
+
+.main-text {
+  width: 100%;
+  height: 400px;
+  font-family: var(--fontFamily-fraunces);
+}
+.main-text p {
+  font-family: var(--fontFamily-barlow);
+}
+
+.main-img {
+  width: 100%;
 }
