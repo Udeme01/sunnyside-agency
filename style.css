@@ -75,6 +75,16 @@ body {
   width: 30px;
 }
 
+#main {
+  margin: 0;
+  padding: 0;
+  /* border: 2px solid red; */
+}
+
+.main-section {
+  /* border: 4px solid green; */
+}
+
 .main-text {
   width: 100%;
   height: 400px;
@@ -116,4 +126,67 @@ body {
 
 .main-img {
   width: 100%;
+}
+
+/* CLIENT TESTIMONIALS */
+
+.client-testimonials {
+  width: 90%;
+  max-width: 1440px;
+  margin: 0 auto;
+  text-align: center;
+
+  /* border: 2px solid red; */
+}
+
+.clients-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.client-testimonials h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: var(--fontFamily-fraunces);
+  font-size: var(--fontSize);
+  font-weight: var(--fontWeight-fraunces-bold);
+  letter-spacing: 0.15rem;
+  color: var(--darkGrayishBlue);
+  padding: 3rem;
+}
+
+.testimonials-container img {
+  width: 80px;
+  border-radius: 100%;
+}
+
+.testimonials-text {
+  font-family: var(--fontFamily-barlow);
+  font-weight: var(--fontWeight-barlow-semibold);
+  color: var(--darkGrayishBlue);
+  font-size: 0.9rem;
+  padding: 0 2rem;
+  line-height: 1.5rem;
+}
+
+.client-testimonials-personal-details {
+  margin: 1.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.client-testimonials-name {
+  font-family: var(--fontFamily-fraunces);
+  font-weight: var(--fontWeight-fraunces-black);
+  font-size: var(--fontSize);
+}
+
+.client-testimonials-role {
+  font-family: var(--fontFamily-barlow);
+  font-size: 16px;
+  color: var(--darkGrayishBlue);
 }
