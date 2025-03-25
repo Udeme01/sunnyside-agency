@@ -149,7 +149,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   font-family: var(--fontFamily-fraunces);
-  font-size: var(--fontSize);
+  font-size: 16px;
   font-weight: var(--fontWeight-fraunces-bold);
   letter-spacing: 0.15rem;
   color: var(--darkGrayishBlue);
@@ -165,7 +165,7 @@ body {
   font-family: var(--fontFamily-barlow);
   font-weight: var(--fontWeight-barlow-semibold);
   color: var(--darkGrayishBlue);
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   padding: 0 2rem;
   line-height: 1.5rem;
 }
@@ -187,6 +187,6 @@ body {
 
 .client-testimonials-role {
   font-family: var(--fontFamily-barlow);
-  font-size: 16px;
+  font-size: 14px;
   color: var(--darkGrayishBlue);
 }
