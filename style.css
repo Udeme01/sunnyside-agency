@@ -33,6 +33,13 @@ body {
   font-size: var(--fontSize);
 }
 
+p {
+  font-family: var(--fontFamily-barlow);
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+  font-weight: var(--fontWeight-barlow-semibold);
+}
+
 #header-showcase {
   background: url("/images/desktop/image-header.jpg");
   background-repeat: no-repeat;
@@ -83,7 +90,6 @@ body {
 #main {
   margin: 0;
   padding: 0;
-  /* border: 2px solid red; */
 }
 
 /* .main-section {
@@ -111,12 +117,8 @@ body {
 }
 
 .main-text p {
-  font-family: var(--fontFamily-barlow);
-  padding: 0 2rem;
-  font-size: 0.9rem;
-  line-height: 1.5rem;
   color: var(--darkGrayishBlue);
-  font-weight: var(--fontWeight-barlow-semibold);
+  padding: 0 2rem;
 }
 
 .main-text a {
@@ -132,6 +134,32 @@ body {
 .main-img {
   width: 100%;
   display: block;
+}
+
+.image-overlay-container {
+  position: relative;
+}
+
+.overlayText {
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  text-align: center;
+}
+
+.overlayText h2 {
+  text-transform: capitalize;
+  font-family: var(--fontFamily-fraunces);
+  font-weight: var(--fontWeight-fraunces-black);
+  color: var(--darkDesaturatedCyan-graphic-design-text);
+  margin-bottom: 1rem;
+}
+
+.overlayText p {
+  color: var(--darkDesaturatedCyan-graphic-design-text);
+  font-size: 12px;
 }
 
 /* CLIENT TESTIMONIALS */
