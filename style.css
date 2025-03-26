@@ -11,7 +11,7 @@
   --yellow: hsl(51, 100%, 49%);
   --darkDesaturatedCyan-graphic-design-text: hsl(167, 40%, 24%);
   --darkBlue-photography-text: hsl(198, 62%, 26%);
-  --darkModerateCyan-footer: hsl(168, 34%, 41%);
+  --darkModerateCyan-footer: hsl(168, 34%, 65%);
 
   /* neutral */
   --veryDarkDesaturatedBlue: hsl(212, 27%, 19%);
@@ -56,6 +56,11 @@ body {
   padding-top: 2rem;
 }
 
+.logo,
+.icon-hamburger {
+  cursor: pointer;
+}
+
 .creativesText-showcase {
   font-family: var(--fontFamily-fraunces);
   font-size: 2rem;
@@ -81,9 +86,9 @@ body {
   /* border: 2px solid red; */
 }
 
-.main-section {
-  /* border: 4px solid green; */
-}
+/* .main-section {
+  border: 4px solid green;
+} */
 
 .main-text {
   width: 100%;
@@ -126,6 +131,7 @@ body {
 
 .main-img {
   width: 100%;
+  display: block;
 }
 
 /* CLIENT TESTIMONIALS */
@@ -143,6 +149,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 3rem;
+  padding: 2rem 0;
+  margin-bottom: 2rem;
 }
 
 .client-testimonials h1 {
@@ -190,4 +198,74 @@ body {
   font-family: var(--fontFamily-barlow);
   font-size: 16px;
   color: var(--darkGrayishBlue);
+}
+
+/* image gallery section */
+.image-gallery-container {
+  margin: 0;
+  padding: 0;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.image-gallery-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* footer */
+footer {
+  background-color: var(--darkModerateCyan-footer);
+}
+
+footer h1 {
+  width: 100%;
+  padding: 1rem 0;
+  padding-top: 3rem;
+  color: var(--darkDesaturatedCyan-graphic-design-text);
+  text-align: center;
+  font-family: var(--fontFamily-fraunces);
+  font-weight: var(--fontWeight-fraunces-black);
+}
+
+.footer_nav {
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.footer_nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0.45rem;
+}
+
+.footer_nav ul li {
+  list-style-type: none;
+}
+
+.footer_nav ul li a {
+  text-decoration: none;
+  font-family: var(--fontFamily-barlow);
+  font-weight: var(--fontWeight-barlow-semibold);
+  font-size: var(--fontSize);
+  color: var(--darkDesaturatedCyan-graphic-design-text);
+  padding: 0.25rem;
+}
+
+.footer__icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 3rem 0;
+}
+
+.footer__icons li {
+  list-style-type: none;
+  padding: 0.5rem;
+  cursor: pointer;
 }
