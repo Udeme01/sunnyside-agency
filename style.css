@@ -36,7 +36,7 @@ body {
 p {
   font-family: var(--fontFamily-barlow);
   font-size: 0.9rem;
-  line-height: 1.2rem;
+  line-height: 1.25rem;
   font-weight: var(--fontWeight-barlow-semibold);
 }
 
@@ -145,21 +145,22 @@ p {
   bottom: 0%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 70%;
+  width: 100%;
   text-align: center;
 }
 
 .overlayText h2 {
   text-transform: capitalize;
   font-family: var(--fontFamily-fraunces);
+  font-size: 2rem;
   font-weight: var(--fontWeight-fraunces-black);
   color: var(--darkDesaturatedCyan-graphic-design-text);
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .overlayText p {
+  padding: 0 2rem;
   color: var(--darkDesaturatedCyan-graphic-design-text);
-  font-size: 12px;
 }
 
 /* CLIENT TESTIMONIALS */
@@ -257,6 +258,7 @@ footer h1 {
   text-align: center;
   font-family: var(--fontFamily-fraunces);
   font-weight: var(--fontWeight-fraunces-black);
+  font-size: 2rem;
 }
 
 .footer_nav {
@@ -267,7 +269,8 @@ footer h1 {
 .footer_nav ul {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 2.5rem;
   padding: 0.45rem;
 }
 
@@ -279,7 +282,7 @@ footer h1 {
   text-decoration: none;
   font-family: var(--fontFamily-barlow);
   font-weight: var(--fontWeight-barlow-semibold);
-  font-size: var(--fontSize);
+  font-size: 12px;
   color: var(--darkDesaturatedCyan-graphic-design-text);
   padding: 0.25rem;
 }
