@@ -136,17 +136,23 @@ p {
 .learnMore-line {
   width: 125px;
   height: 9px;
-  position: absolute;
-  left: 49.7%;
-  bottom: 20.6%;
-  transform: translate(-50%, -50%);
   border-radius: 20px;
   z-index: 0;
   opacity: 30%;
+
+  position: relative;
+  top: -8px;
+  left: -1px;
+}
+
+.learnMore-container:hover .yellow-line,
+.learnMore-container:hover .red-line {
+  opacity: 100%;
 }
 
 .yellow-line {
   background-color: hsl(51, 100%, 49%);
+  bottom: 25.5%;
 }
 
 .red-line {
