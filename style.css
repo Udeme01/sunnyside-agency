@@ -141,6 +141,7 @@ p {
 .brand-main-text p,
 .stand-out-main-text p {
   color: var(--darkGrayishBlue);
+  font-size: 14px;
 }
 
 .brand-main-text a,
@@ -202,15 +203,16 @@ p {
 .overlayText h2 {
   text-transform: capitalize;
   font-family: var(--fontFamily-fraunces);
-  font-size: 2rem;
+  font-size: 1.85rem;
   font-weight: var(--fontWeight-fraunces-black);
   color: var(--darkDesaturatedCyan-graphic-design-text);
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .overlayText p {
   padding: 0 2rem;
   color: var(--darkDesaturatedCyan-graphic-design-text);
+  font-size: 14px;
 }
 
 @media (max-width: 270px) {
@@ -235,8 +237,6 @@ p {
   max-width: 1440px;
   margin: 0 auto;
   text-align: center;
-
-  /* border: 2px solid red; */
 }
 
 .clients-container {
@@ -348,7 +348,7 @@ footer h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2.5 rem;
+  gap: 2.5rem;
   padding: 0.45rem;
 }
 
@@ -379,16 +379,25 @@ footer h1 {
   cursor: pointer;
 }
 
+/* desktop nav */
 .nav-ul {
   display: none;
 }
 
-/* MEDIA QUERY */
+/* 
 
-@media (min-width: 600px) {
-}
+MEDIA QUERY 600px
+MEDIA QUERY 600px
+MEDIA QUERY 600px
+MEDIA QUERY 600px
+MEDIA QUERY 600px
+MEDIA QUERY 600px
+MEDIA QUERY 600px
+MEDIA QUERY 600px
+MEDIA QUERY 600px
+MEDIA QUERY 600px
 
-/* ...MEDIA QUERY... */
+*/
 
 @media (min-width: 600px) {
   /* HEADER SECTION */
@@ -396,6 +405,7 @@ footer h1 {
     display: none;
   }
 
+  /* desktop nav */
   .nav-ul {
     display: flex;
     align-items: center;
@@ -428,6 +438,8 @@ footer h1 {
   .nav-li:nth-child(4) a {
     color: var(--veryDarkDesaturatedBlue);
   }
+
+  /* end of desktop nav */
 
   /* MAIN SECTION */
 
@@ -501,7 +513,8 @@ footer h1 {
 
   /* --- SECTION 3 ---  */
   .design-brand-section {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
   .image-overlay-container {
@@ -509,28 +522,103 @@ footer h1 {
   }
 
   .overlayText {
-    position: absolute;
-    bottom: 0%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    height: 130px;
-    max-width: 500px;
-    text-align: center;
+    transform: translate(-50%, 0%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
   }
 
   .overlayText h2 {
-    text-transform: capitalize;
-    font-family: var(--fontFamily-fraunces);
-    font-size: 2rem;
-    font-weight: var(--fontWeight-fraunces-black);
-    color: var(--darkDesaturatedCyan-graphic-design-text);
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    width: fit-content;
   }
 
   .overlayText p {
-    padding: 0 2rem;
-    color: var(--darkDesaturatedCyan-graphic-design-text);
+    font-size: 12px;
+    padding: 0 3rem;
+  }
+
+  /* IMAGE GALLERY */
+  .image-gallery-container {
+    margin: 0;
+    padding: 0;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .image-gallery-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* 
+MEDIA QUERY 800px 
+MEDIA QUERY 800px 
+MEDIA QUERY 800px 
+MEDIA QUERY 800px 
+MEDIA QUERY 800px 
+MEDIA QUERY 800px 
+MEDIA QUERY 800px 
+MEDIA QUERY 800px 
+MEDIA QUERY 800px 
+MEDIA QUERY 800px 
+
+*/
+@media (min-width: 800px) {
+  /* DESKTOP NAV */
+  .nav-ul {
+    font-size: 16px;
+  }
+
+  /* MAIN SECTION */
+
+  .brand-main-text h2,
+  .stand-out-main-text h2 {
+    font-size: 2rem;
+  }
+
+  .brand-main-text p,
+  .stand-out-main-text p {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+  }
+
+  /* SECTION 3 800px */
+  .overlayText h2 {
+    font-size: 2rem;
+  }
+
+  .overlayText p {
+    font-size: 14px;
+    padding: 0 4rem;
+  }
+
+  /* CLIENT TESTIMONIALS */
+
+  .client-testimonials {
+    padding: 1.5rem 0;
+  }
+
+  .client-testimonials h1 {
+    letter-spacing: 0.5rem;
+  }
+
+  .clients-container {
+    flex-direction: row;
+  }
+
+  .client-testimonies {
+    width: 100%;
+    height: fit-content;
+    padding: 0;
+    margin: 0;
   }
 }
 
